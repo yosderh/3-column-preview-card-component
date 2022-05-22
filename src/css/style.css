@@ -1,0 +1,99 @@
+@import url(./globales.css);
+
+.main{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+.main__center{
+    margin: 88px auto;
+}
+
+.main-card{
+    padding: 50px;
+    max-width: 330px;
+
+}
+
+.card-icon span img{
+    width: 68px;
+    height: 42px;
+}
+
+.main-card .card-title{
+    font-family: var(--fontPrincipal);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--veryLightGray);
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.main-card .card-text{
+    font-family: var(--fontSecundary);
+    color: var(--transparentWhite);
+    width: 90%;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 40px;
+}
+
+.main-card .card-button{
+    border: none;
+    background-color: var(--veryLightGray);
+    padding: 15px 32px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: var(--fontSecundary);
+    font-weight: 400;
+    margin-top: 28px;
+}
+
+.main-card:nth-child(1){
+    border-radius: 10px 10px 0 0;
+}
+.main-card:nth-child(3){
+    border-radius: 0 0 10px 10px;
+}
+
+
+.main-card__orange{
+    background-color: var(--brightOrange);
+}
+.main-card__orange button{
+    color: var(--brightOrange);
+}
+.main-card__blue{
+    background-color: var(--darkCyan);
+}
+.main-card__blue button{
+    color: var(--darkCyan);
+}
+.main-card__green{
+    background-color: var(--veryDarkCyan);
+}
+.main-card__green button{
+    color: var(--veryDarkCyan);
+}
+
+@media (min-width: 870px){
+    .main__center{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .main-card{
+        width: 308px;
+    }
+    .main-card:nth-child(1){
+        border-radius: 10px 0 0 10px;
+    }
+    .main-card:nth-child(3){
+        border-radius: 0 10px 10px 0;
+    }
+
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
